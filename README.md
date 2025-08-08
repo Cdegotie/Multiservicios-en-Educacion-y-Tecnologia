@@ -1,7 +1,7 @@
-MULTISERVICIOS EN EDUCACION Y TECNOLOGIA
+SERVICIOS PROFESIONALES EN EDUCACION Y TECNOLOGIA
 "Aprender, conectar, transformar"
 
-Bienvenido al repositorio oficial de **LinkUp**, la unidad tecnológica de soluciones digitales especializadas en:
+Bienvenido a nuetro repositorio oficial, la unidad tecnológica de soluciones digitales especializadas en:
 - Diseño de páginas web modernas y responsivas
 - Tarjetas de presentación con tecnología NFC
 - Códigos QR personalizados para negocios, eventos y networking
