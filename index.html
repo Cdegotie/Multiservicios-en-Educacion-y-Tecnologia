@@ -1,67 +1,216 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tarjeta de Presentación</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tu Tarjeta NFC Profesional</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    :root {
+      --primary-color: #1a1a2e;
+      --secondary-color: #16213e;
+      --accent-color: #0f3460;
+      --highlight-color: #e94560;
+      --text-light: #f1f1f1;
+      --text-dark: #333;
+    }
+
+    * {
       margin: 0;
       padding: 0;
-      text-align: center;
-      background: #f5f5f5;
-      color: #333;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
     }
-    header {
-      background: #0077cc;
-      color: white;
-      padding: 20px;
-      font-size: 24px;
-      font-weight: bold;
+
+    body {
+      background: var(--secondary-color);
+      color: var(--text-light);
+      line-height: 1.6;
+      padding: 2rem;
     }
-    main {
-      margin: 40px auto;
-      max-width: 600px;
+
+    .card {
       background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      color: var(--text-dark);
+      border-radius: 15px;
+      max-width: 960px;
+      margin: auto;
+      padding: 2.5rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     }
-    .btn-contacto {
-      background-color: #0077cc;
+
+    .hero {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      color: var(--accent-color);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+
+    .section {
+      margin-top: 2rem;
+    }
+
+    .section h2 {
+      font-size: 1.4rem;
+      color: var(--highlight-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .section ul {
+      padding-left: 1.5rem;
+    }
+
+    .section li {
+      margin-bottom: 0.5rem;
+    }
+
+    .pricing {
+      margin-top: 1.5rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    th, td {
+      padding: 1rem;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    th {
+      background: var(--accent-color);
       color: white;
-      padding: 15px 25px;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: bold;
-      border-radius: 8px;
-      display: inline-block;
-      margin-top: 20px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-      transition: background-color 0.3s ease;
     }
-    .btn-contacto:hover {
-      background-color: #005fa3;
+
+    .cta {
+      text-align: center;
+      margin-top: 2.5rem;
+    }
+
+    .cta a {
+      background: var(--highlight-color);
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      text-decoration: none;
+      border-radius: 10px;
+      display: inline-block;
+      margin: 10px;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #c43046;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
+  <div class="card">
+    <div class="hero">
+      <h1>Tarjeta de Presentación NFC + Landing Page</h1>
+      <p>Una experiencia moderna, elegante y profesional para potenciar tu presencia.</p>
+    </div>
 
-  <header>
-    Lic. Josué Zepeda - EDUTECH
-  </header>
+    <div class="section">
+      <h2>¿Qué incluye el servicio?</h2>
+      <ul>
+        <li><strong>Tarjeta física NFC + Código QR</strong> con tu identidad profesional.</li>
+        <li><strong>Landing Page personalizada (Página de alojamiento web)</strong> optimizada para móviles y navegadores.</li>
+        <li><strong>Diseño visual elegante</strong> acorde a tu estilo profesional.</li>
+        <li><strong>Actualizaciones incluidas</strong> por un año.</li>
+      </ul>
+    </div>
 
-  <main>
-    <h2>Bienvenido a mi Tarjeta de Presentación</h2>
-    <p>Haz clic en el botón de abajo para añadir mi contacto directamente a tu teléfono.</p>
-    
-    <a href="https://raw.githubusercontent.com/dsetas/Landing-Page-Tarjetas-de-Presentacion/main/Contacto.vcf" 
-       target="_blank" 
-       class="btn-contacto">
-       📇 Añadir Contacto
-    </a>
-  </main>
+    <div class="section">
+      <h2>¿Por qué una tarjeta NFC?</h2>
+      <ul>
+        <li>Impresión inmediata y profesional al instante.</li>
+        <li>Acceso digital con un solo toque o escaneo.</li>
+        <li>Olvídate del papel: todo en tu Landing.</li>
+        <li>Ideal para networking, ferias, reuniones.</li>
+      </ul>
+    </div>
 
+    <div class="section pricing">
+      <h2>Planes y precios. Pago anual, con actualizaciones bajo solicitud</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th>Incluye</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Básico</td>
+            <td>Datos, foto, contacto, QR, Landpage</td>
+            <td>Q250.00</td>
+          </tr>
+          <tr>
+            <td>Profesional</td>
+            <td>+ Redes, enlaces, portafolio</td>
+            <td>Q2300.00</td>
+          </tr>
+          <tr>
+            <td>Premium</td>
+            <td>+ Video, ubicación, formulario</td>
+            <td>Q400.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>¿Quién ya lo usa?</h2>
+      <ul>
+        <li>Profesionales independientes</li>
+        <li>Consultores y coaches</li>
+        <li>Médicos, abogados, arquitectos</li>
+        <li>Ejecutivos y emprendedores</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Seguridad y privacidad</h2>
+      <ul>
+        <li>Hosting seguro y profesional</li>
+        <li>Sin compartir tus datos con terceros</li>
+        <li>Control total sobre lo que publicas</li>
+      </ul>
+    </div>
+
+    <div class="cta">
+      <!-- Botón para añadir contacto -->
+      <a href="https://raw.githubusercontent.com/dsetas/Landing-Page-Tarjetas-de-Presentacion/main/Contacto.vcf" target="_blank">📇 Añadir a Contactos</a>
+
+      <!-- Botón de WhatsApp -->
+      <a href="https://wa.me/50246187815" target="_blank">📲 Solicita tu Landing NFC ahora</a>
+    </div>
+
+    <footer>
+      <p>© 2025. Todos los derechos reservados. Diseñado para profesionales como tú.</p>
+    </footer>
+  </div>
 </body>
 </html>
+
